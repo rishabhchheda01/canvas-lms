@@ -28,6 +28,8 @@ WORKDIR $APP_HOME
 
 USER root
 
+EXPOSE 8000
+
 ARG USER_ID
 # This step allows docker to write files to a host-mounted volume with the correct user permissions.
 # Without it, some linux distributions are unable to write at all to the host mounted volume.
